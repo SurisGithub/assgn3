@@ -12,12 +12,17 @@ int main()
 		}
 		avg=sum/5;
 		cout<<"Your Grade is ";
-		if(avg>80) 
+		if(avg>90) 
 		{ 		cout<<"A"; 	} 	
-		else if(avg>60 && avg<=80) 	
+		else if(avg>80 && avg<=90) 	
 		{ 		cout<<"B"; 	} 	
-		else if(avg>40 && avg<=60) 	
+		else if(avg>70 && avg<=80) 	
 		{ 		cout<<"C"; 	} 	
-		else 	{ 		cout<<"D"; 	} 	
+		else if(avg>60 && avg<=70)
+		{ 		cout<<"D"; 	}
+	        else if(avg>50 && avg<=60)
+		{ 		cout<<"E"; 	}
+	        else if(avg>40 && avg<=50)
+		{ 		cout<<"F"; 	}
 		return 0;
 }
