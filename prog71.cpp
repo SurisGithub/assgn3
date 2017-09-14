@@ -1,11 +1,15 @@
     #include<iostream>
     #include<string.h>
     #include<cmath>
+
+    /*PROGRAM TO CONVERT HEXADECIMAL TO DECIMAL*/
+
     using namespace std;
      
     int hex_to_dec(char hex[])
     {
     	int i,len, dec=0;
+        
     	for(len=0; hex[len]!='\0'; len++);
     	for(i=0; hex[i]!='\0'; i++,len--)
     	{
@@ -30,7 +34,8 @@
      
     	char hex[20],c;
     	int n;
-    	cout<<"\nEnter Hexadecimal Number : ";
+        cout<<"PROGRAM TO CONVERT HEXADECIMAL TO DECIMAL";
+    	cout<<"\n \nEnter Hexadecimal Number : ";
     	cin>>hex;
     	cout<<"\nEquivalent decimal Value = "<<hex_to_dec(hex);
     	return 0;
